@@ -72,13 +72,15 @@ class SVD:
         self.fit(matrix)
         return self.transform(matrix)
 
-    def inverse_transform(self) -> np.array:
+    def inverse_transform(self, matrix:np.array) -> np.array:
         """Transform the data based on the specified number of components.
 
         Returns:
             Transformed data.
 
         """
+        self.fit(matrix)
+
         if self.n_components:
             result = (
                 self.u[:, : self.n_components]
