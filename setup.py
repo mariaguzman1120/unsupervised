@@ -14,6 +14,6 @@ setup(
     packages=[
         'unsupervised',
         'unsupervised.dimensionality_reduction',
-        'unsupervises.clustering'],
+        'unsupervised.clustering'],
     install_requires=['numpy'],
 )
