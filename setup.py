@@ -13,6 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     packages=[
         'unsupervised',
-        'unsupervised.dimensionality_reduction'],
+        'unsupervised.dimensionality_reduction',
+        'unsupervises.clustering'],
     install_requires=['numpy'],
 )
